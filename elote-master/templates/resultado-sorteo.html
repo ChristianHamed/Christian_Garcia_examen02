@@ -1,0 +1,10 @@
+{% include 'header.html' %}
+    <main>
+        <h1>Resultado</h1>
+        {% if Sorteo %}
+            <p>Ganaste</p>
+        {% else %}
+            <p>Perdiste</p>
+        {% endif %}
+    </main>
+{% include 'footer.html' %}

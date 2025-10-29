@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+    {% include 'header.html' %}
+    <main>
+        <div>
+            <!-- Generador de número random -->
+            <form method="post" action="/sorteo">
+                <p>Escribe tres numeros del 1 al 100 para participar en el sorteo:</p>
+
+                <input name="numero1" id="input-1" class="input-welcome" type="number" min="1" max="100" required placeholder="Numero 1">
+                <br><br>
+                <input name="numero2" id="input-2" class="input-welcome" type="number" min="1" max="100" required placeholder="Numero 2">
+                <br><br>
+                <input name="numero3" id="input-3" class="input-welcome" type="number" min="1" max="100" required placeholder="Numero 3">
+                <br><br>
+                <button class="button-ok" type="submit">Participar</button>
+            </form>
+        </div>
+    </main>
+    {% include 'footer.html' %}
+</html>

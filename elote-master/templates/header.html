@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mi aplicación web</title>
+        <link rel="icon" href="resources/favicon.ico">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    </head>
+
+    <body>
+
+        <header>
+            <!-- a significa anchor (ancla) para hacer enlaces -->
+             <!-- nuevo comentario-->
+            <a href="{{ url_for('index') }}">Inicio</a>
+            <a href="{{ url_for('math') }}">Matemáticas</a>
+            <a href="{{ url_for('palindrome') }}">Palíndromo</a>
+            <a href="{{ url_for('animals') }}">Animales</a>
+        </header>

@@ -1,0 +1,14 @@
+  {% include 'header.html' %}
+ <main>
+    <div>
+        <p>Ingresa un número</p>
+        <input id="input-value1" class="input-welcome" type="number" placeholder="Asegúrate que sea un número">
+        
+        <p>Ingresa otro número</p>
+        <input id="input-value2" class="input-welcome" type="number" placeholder="Asegúrate que sea un número">
+        
+        <button class="button-ok" id="btn-ok">Sumar</button>
+    </div>
+</main>
+ <script src="{{ url_for('static', filename='js/math.js') }}"></script>
+{% include 'footer.html' %}
